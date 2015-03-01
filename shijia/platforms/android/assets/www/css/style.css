@@ -19,8 +19,22 @@ h1, h2, h3{font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .mb5{margin-bottom:5px;}
 .mb10{margin-bottom:10px;}
 .mb15{margin-bottom:15px;}
-.mr0{margin-right:0px;}
-.mr5{margin-right:5px;}
+.mb0{margin-bottom:0px;}
+.mb1{margin-bottom:1px;}
+.mb2{margin-bottom:2px;}
+.mb3{margin-bottom:3px;}
+.mb4{margin-bottom:4px;}
+.mb5{margin-bottom:5px;}
+.mb6{margin-bottom:6px;}
+.mb7{margin-bottom:7px;}
+.mb8{margin-bottom:8px;}
+.mlr20{margin-right:20px; margin-left:20px}
+.mlr10{margin-right:10px; margin-left:10px}
+.mlr5{margin-right:5px; margin-left:5px}
+.ml20{margin-left:20px;}
+.fonts17{font-size:17px;}
+.plr10{padding-left:10px; padding-right:10px;}
+.plr15{padding-left:15px; padding-right:15px;}
 .r0{right:0}
 .pb0{padding-bottom:0px;}
 .p0{padding:0px;}
@@ -45,6 +59,8 @@ h1, h2, h3{font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .chbox-center{ text-align:center; }
 .chbox-center .chbox-input{ margin-top:6.5px}
 .chbox-center .chbox-txt{ font-size:18px; margin-top:0}
+.chbox-left .chbox-input{ margin-top:6.5px}
+.chbox-left .chbox-txt{ font-size:18px; margin-top:0}
 .form-group-input{ height:27px;}
 .form-group-input-pdr-1px{ padding-right:1px}
 .form-group-input-pdl-1px{ padding-left:1px}
@@ -69,6 +85,14 @@ h1, h2, h3{font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .pdl-6px{ padding-left:6px}
 .center_img{text-align:center; padding:0 0 15px;}
 /*导驾页*/
+/*签到*/
+.sign-box{ background:#fff;min-height:300px;}
+.sign-choice{ padding:20px 20% 10px 5px}
+.sign-img{ width:80px; margin-top:10px}
+.sign-lead{font-size:26px;font-weight:300; color:#111;line-height:1.4}
+.sign-txt{color:#777; font-size:14px}
+.sign-span-img{width:40px; margin-bottom:5px}
+/*签到*/
 /*图片信息页*/
 .img_wd
     {

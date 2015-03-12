@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<title>试驾</title>
+<meta name="keywords" content="试驾">
+<meta name="description" content="试驾">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../vendor/citypicker/citypicker.css">
+<link rel="stylesheet" href="../vendor/datepicker/datepicker.css">
+<link rel="stylesheet" href="../css/bootstrap-modal.css">
+</head>
+<body>
+<div class="maincontainer mini-innner">
+	
+    
+    <form role="form">
+    <div class="login">
+  
+		  <div style="position:absolute;     bottom: 0px;    left:0px; width:100%; padding:20px 20px; margin-bottom:20px">
+              <div>
+                <div class="tocenter mb10 "><a class="share_weixin"></a><a class="share_weibo"></a><a class="share_py"></a><a class="share_msg"></a></div>
+                <a href="#" class="btn btn-green btn-lg btn-block">取消</a>
+               
+              </div>
+          </div>
+   
+    </form>
+</div>
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>	
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap-modal.js"></script>
+<script type="text/javascript" src="../vendor/citypicker/jquery.citypicker.js"></script>
+<script type="text/javascript" src="../vendor/datepicker/bootstrap-datepicker.js"></script>	
+<script>
+		
+		$(function(){
+			$('#order4s_date').datepicker({
+				format: 'yyyy/mm/dd'
+			});
+			var car = {
+				"比亚迪": ["比亚迪A9", "比亚迪C1", "比亚迪C6", "比亚迪D1", "比亚迪R1"],
+				"福克斯": ["福克斯1", "福克斯2", "福克斯3"],
+				"宝马": ["宝马4系", "宝马5系", "宝马6系", "宝马7系", "宝马8系", "宝马9系", "宝马X0", "宝马X1", "宝马X2", "宝马X3", "宝马X4", "宝马X5"], 
+				"奔驰": ["奔驰4C", "奔驰5C", "奔驰6C", "奔驰7C", "奔驰8C", "奔驰9C", "奔驰5B", "奔驰5L"], 
+				"奥迪": ["奥迪A4L", "奥迪A5L", "奥迪A6L"]
+			 };
+			$('#order4s_add').citypicker(car,'#order4s_in');
+			
+		});
+	</script>
+</body>
+</html>

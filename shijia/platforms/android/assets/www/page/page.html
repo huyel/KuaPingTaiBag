@@ -1,42 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
+<!DOCTYPE html>
+<html lang="zh-cn">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>无标题文档</title>
+<meta name="format-detection" content="telephone=no">
+
+<title>试驾</title>
+<meta name="keywords" content="试驾">
+<meta name="description" content="试驾">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
-<body>
-<div data-role="page" id="page">
-	<div data-role="header">
-		<h1>第 1 页</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview">
-			<li><a onclick="gopage()">第 2 页</a></li>
-            <li><a href="#page3">第 3 页</a></li>
-			<li><a href="#page4">第 4 页</a></li>
-		</ul>		
-	</div>
-	<div data-role="footer">
-		<h4>页面脚注</h4>
-	</div>
+<style type="text/css">
+.login{padding:20px;}
+.login_tit{margin:10px auto 20px; text-align:center;}
+.login .form-group{margin-bottom:20px;}
+.login .form-group .form-control{background-color: #faf4f4; border-color: #eae1e2; color:#bbb; box-shadow: none; height:45px; font-size:16px;}
+</style>
+<body class="reg-bg">
+<div class="">
+	
 </div>
-<link rel="stylesheet" href="../vendor/jquery-mobile/jquery.mobile-1.4.5.min.css">
-<script type="text/javascript" src="../vendor/jquery-mobile/jquery-2.0.3.min.js"></script>
-<script type="text/javascript" src="../vendor/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
-
-<!--<script type="text/javascript" src="cordova.js"></script> app.changePageOnValue('coupon','','')-->
-<script type="text/javascript" src="../js/index.js"></script>
-<script type="text/javascript">
-     function gopage(){
-		 $.mobile.changePage("index.html", {
-									transition : "slide"
-									});
-	 }
-	 app.initialize();              
-</script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>

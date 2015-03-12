@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+<title>试驾</title>
+<meta name="keywords" content="试驾">
+<meta name="description" content="试驾">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../vendor/citypicker/citypicker.css">
+<link rel="stylesheet" href="../vendor/datepicker/datepicker.css">
+</head>
+<body>
+<div class="maincontainer mini-innner">
+	<header class="headbar">
+		<a class="head_left" onclick="history.go(-1)"><span class="glyphicon back_img"></span></a>
+         <a class="head_righ" onclick="history.go(-1)"><span class="glyphicon more_img"></span></a>
+		<h1 class="title">预约活动</h1>		 
+       
+	</header>
+    
+    <form role="form">
+    <div class="login">
+   	   	
+    		<div class="form-group form-group-input ">
+				<input type="text" id="order4s_date" class="form-control sj_input_img" placeholder="日期：">
+        		
+			</div>
+            
+			<div class="form-group form-group-input">
+				<input type="text" class="form-control" placeholder="试驾人数：">
+			</div>
+
+			<div class="form-group row">
+				<div class="col-xs-5 form-group-input-pdr-0px"><input type="text" id="order4s_in" class="form-control " placeholder="请输入品牌"></div>
+                <div class="col-xs-5 form-group-input-pdl-0px"><input type="text" id="order4s_type" class="form-control " placeholder="请输入车型"></div>
+                
+				<div class="col-xs-2 form-group-input-pdl-1px" ><a id="order4s_add" href="#"><span class="add_img "></span></a></div>
+			</div>
+            <label class="order_lable">参加车型:</label>
+            <div class="radius_box">
+                <p class="guide-info-txt mb5">
+                    东方日产：奇骏
+                </p>
+                <p class="guide-info-txt mb5">
+                    宝马：x6
+                </p>
+            </div>
+            
+    </div>
+
+    <div class="content_main">
+
+   	   		<div><label class="order_lable">试驾项目:</label></div>
+        
+            <div class="col-xs-5">
+            
+            <p class="guide-info-txt tocenter mb5 height50">
+                2014/11/11&nbsp;10:21
+                
+            </p>
+            <p class="guide-info-txt tocenter mb5 height50" >
+                2014/11/11&nbsp;10:21
+                
+            </p>
+            <p class="guide-info-txt tocenter mb5 height50">
+                2014/11/11&nbsp;10:21
+                
+            </p>
+             <p class="guide-info-txt tocenter mb5 height50">
+                2014/11/11&nbsp;10:21
+                
+            </p>
+            </div>
+          
+            <div class="col-xs-1 ml10">
+            <p class="guide-info-txt  height50  ml20">
+                <a class="ml3-"><img src="../images/line.png" class="line"></a>
+            </p>
+            <p class="guide-info-txt height50  ml20">
+             <a class="ml3-"><img src="../images/line.png" class="line"></a>
+            </p>
+            <p class="guide-info-txt height50  ml20">
+                
+    
+    
+                <a class="ml3-"><img src="../images/line.png" class="line"></a>
+                
+            </p>
+           
+            </div>
+        
+            <div class="col-xs-5">
+                <p  class="guide-info-txt  mb5 tocenter height50">
+                    <span class="ml10">预约时间</span>
+                </p>
+                <p class="guide-info-txt  mb5 tocenter height50">
+                    
+                    <span class="ml10">现场签到</span>
+                </p>
+                <p class="guide-info-txt mb5 tocenter height50">
+                    
+                    <span class="ml10">开始试驾</span>
+                </p>
+                 <p class="guide-info-txt mb5 tocenter height50">
+                    
+                    <span class="ml10">试驾完成</span>
+                </p>
+                
+            </div>
+	        
+		
+	</div>
+    <div class="col-xs-12"><div style="padding-top:10px;" class="form-group">
+				<a href="#" class="btn btn-green btn-lg btn-block">提交</a>
+			</div></div>
+    </form>
+</div>
+<script type="text/javascript" src="../js/jquery-2.0.3.min.js"></script>	
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../vendor/citypicker/jquery.citypicker.js"></script>
+<script type="text/javascript" src="../vendor/datepicker/bootstrap-datepicker.js"></script>	
+<script>
+		
+		$(function(){
+			$('#order4s_date').datepicker({
+				format: 'yyyy/mm/dd'
+			});
+			var car = {
+				"比亚迪": ["比亚迪A9", "比亚迪C1", "比亚迪C6", "比亚迪D1", "比亚迪R1"],
+				"福克斯": ["福克斯1", "福克斯2", "福克斯3"],
+				"宝马": ["宝马4系", "宝马5系", "宝马6系", "宝马7系", "宝马8系", "宝马9系", "宝马X0", "宝马X1", "宝马X2", "宝马X3", "宝马X4", "宝马X5"], 
+				"奔驰": ["奔驰4C", "奔驰5C", "奔驰6C", "奔驰7C", "奔驰8C", "奔驰9C", "奔驰5B", "奔驰5L"], 
+				"奥迪": ["奥迪A4L", "奥迪A5L", "奥迪A6L"]
+			 };
+			$('#order4s_add').citypicker(car,'#order4s_in');
+			
+		});
+	</script>
+</body>
+</html>
